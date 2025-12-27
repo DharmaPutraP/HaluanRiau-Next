@@ -114,6 +114,7 @@ const formatArticleData = (apiData) => {
     id: item.id_berita,
     judul: item.judul_berita,
     judul_berita: item.judul_berita, // Keep original for article detail page
+    judul_khusus: item.judul_khusus || "",
     tag: item.nama_kategori,
     nama_kategori: item.nama_kategori, // Add nama_kategori separately
     permalink: item.permalink, // Add permalink for category

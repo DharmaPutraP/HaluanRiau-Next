@@ -211,7 +211,16 @@ function ArticleDetailPage() {
       <div className="w-full sm:w-10/12 px-2 sm:px-4 mx-auto">
         <div className="bg-white px-3 sm:px-4 md:px-10 py-3 sm:py-4 md:py-6 mt-2">
           {/* Article Title */}
-          <h1 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 leading-tight text-gray-900 border-b-4 border-[#EE4339] pb-2">
+          <h1
+            className={`text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 leading-tight text-gray-900 border-b-4 border-[#EE4339] pb-2 ${
+              article.judul_khusus ? " flex flex-col " : ""
+            } `}
+          >
+            {article.judul_khusus && (
+              <span className="text-sm text-gray-600 ">
+                {article.judul_khusus}
+              </span>
+            )}
             {article.judul_berita}
           </h1>
 
