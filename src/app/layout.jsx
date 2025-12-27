@@ -18,13 +18,15 @@ const merriweather = Merriweather({
 });
 
 export const metadata = {
-  title: "Your News Site",
-  description: "Berita terpercaya dan terkini",
+  title: "Riau Mandiri - Portal Berita Riau Terkini",
+  description:
+    "Portal berita terkini Riau - Informasi terpercaya seputar berita Riau, nasional, dan internasional",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="id" className={`${inter.variable} ${merriweather.variable}`}>
+      <link rel="icon" type="image/png" href="/LogoKecil.png" />
       <body>
         <Providers>
           <div className="min-h-screen flex flex-col">
